@@ -1,0 +1,90 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{王嘉梁}
+
+\basicInfo{
+  \email{jw2476@cornell.edu} \textperiodcentered\
+  \phone{(+86) 187-5759-4751} \textperiodcentered\
+  \linkedin[wangvincent1993]{https://www.linkedin.com/in/wangvincent1993}}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{康奈尔大学}, 美国}{2017 -- 2018}
+\textit{硕士研究生}\ 计算机科学
+\datedsubsection{\textbf{伊利诺伊大学香槟分校}, 美国}{2012 -- 2016}
+\textit{学士}\ 计算机科学，物理（双学位），数学（辅修）
+
+\section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{滴滴出行} 北京}{2018年7月 -- 至今}
+\role{软件开发工程师}{工作经历}
+滴滴出行国际化后端开发
+\begin{itemize}
+  \item 通过分析进线的主要问题，影响产品经理推出产品方案；作为技术Owner，协调各模块提供技术方案，并促成产品交付；通过产品技术方案，减少单项乘客侧订单投诉率（CPO）
+  \item 作为"快速开国开城”项目的一部分，从零设计场景与功能管理模块，实现模块代码开发，部署上线，A/B测试以及放量发布；有效提升中台微服务开发效率，提高中台接入满意度
+  \item 建设场景与功能模块研发测试规范，搭建资源与流量监控，上线降级开关，总结问题定位经验并输出模块问题快速定位手册，使模块稳定性达到99.99\%
+  \item 建设场景接入标准与推广，顺利使两个微服务通过这个标准接入中台
+  \item 创建部门分享会，并设立分享会制度，鼓励同事间想法与知识分享
+\end{itemize}
+
+\datedsubsection{\textbf{康奈尔大学应用机器学习}}{2017年8月 -- 2017年12月}
+\role{硕士研究生}{课程项目}
+\begin{onehalfspacing}
+图像搜索引擎项目
+\begin{itemize}
+  \item 借助ImageNet预训练ResNet模型，对目标图像进行特征提取，获得1024维特征向量
+  \item 运用NLTK工具，去除中断词，对图像对应的自然语言句子进行BoW矢量化并二值化
+  \item 尝试LASSO, PLS, MLP 等方法建模词向量和特征向量的映射，在PLS上取得最好结果
+  \item 采用近似最近邻算法找到语言描述对应的最佳20个匹配项
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{蚂蚁金服（美国）}}{2015 年6月 -- 2015 年8月}
+\role{软件开发实习生}{实习项目}
+\begin{onehalfspacing}
+图像识别与深度学习算法
+\begin{itemize}
+  \item 通过深度学习技术来识别I型糖尿病的程度
+  \item 进行图像预处理来突出眼部血管，并利用交叉验证解决非均衡数据以及过拟合问题
+  \item 利用7万张图片，利用Caffe技术做出深度神经网络模型，利用C5.0建立决策树，并将深度神经网络模型与决策树结合，进行预测，并获得Top25\%
+\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Golang, PHP, C/C++, Python, Java, Solidity
+  \item 编程框架: Echo, CodeIgniter, Scikit-Learn, OpenCV
+  \item 开发工具: Git, Intellij
+\end{itemize}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 证书: FRM Part II(通过), CFA I
+  \item GitHub: https://github.com/wangvincent
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
