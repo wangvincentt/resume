@@ -31,33 +31,34 @@
 \role{专家算法工程师}{工作经历}
 绝影智驾云端算法开发
 \begin{itemize}
-  \item 基于高精地图反投影，开发道路拓扑自动标注算法，并实现BEV视角可视化。
-  \item 基于高精地图，开发60+种道路场景的云端自动化打标算法。
-  \item 基于SD地图，开发车端实时自动化打标算法。
+  \item 负责云端地图场景挖掘系统，利用高精地图数据，Shapely库,道路几何关系，开发60+种道路场景打标算法。
+  \item 负责车端地图场景挖掘系统，基于SD地图信息，在车端开发基于道路几何的实时化打标算法。
+  \item 参与开发云端自动标注算法，利用高精地图反投影，开发道路拓扑自动标注算法，并实现BEV视角可视化。
 \end{itemize}
 
 \datedsubsection{\textbf{集度汽车} 上海}{2022年11月 -- 2024年5月}
 \role{专家算法工程师}{工作经历}
 集度汽车智驾感知算法开发
 \begin{itemize}
-  \item 开发集度汽车车端哨兵视觉感知pipeline，包括视觉预处理与后处理算法。
-  \item 开发集度汽车云端哨兵可视化，可回放感知融合结果。
-  \item 开发集度智驾云端场景挖掘系统框架并提供规则与模型挖掘算法。
+  \item 负责集度汽车哨兵功能可视化，使用opencv解析数据并回灌感知融合结果，可快速验证算法有效性。 
+  \item 负责集度汽车车端哨兵视觉感知pipeline，利用OpenCV, Eigen等将鱼眼视角转成柱状图视角的方法，消除畸变，适配传统CV算法。
+  \item 负责集度智驾云端场景挖掘系统框架，利用大模型挖掘20+静态场景标签，利用规则算法挖掘20+动态场景标签。
 \end{itemize}
 
 \datedsubsection{\textbf{小马智行} 上海}{2019年9月 -- 2022年9月}
 \role{高级软件开发工程师}{工作经历}
 小马智行数据开发
 \begin{itemize}
-  \item 开发自动标注数据管道，包括数据生成和数据导出模块，为下游算法团队提供可靠的标注数据。
-  \item 开发Console模块后端API，提供提供项目负责人一站化服务，包括提交任务，监控项目进度和查询导出数据。
+  \item 负责标注pipeline的数据导出模块，利用crobjob完成每日定时任务，交付感知团队标注数据。
+  \item 参与标注pipeline的数据生成模块，利用python, C++完成数据解析，数据抽帧，并利用API回传结果。
+  \item 参与开发标注任务管理模块后端API，利用Flask完成后端任务创建与任务查询功能。
 \end{itemize}
 
 \datedsubsection{\textbf{滴滴出行} 北京}{2018年7月 -- 2019年9月}
 \role{软件开发工程师}{工作经历}
 滴滴出行国际化后端开发
 \begin{itemize}
-  \item 通过分析进线的主要问题，影响产品经理推出产品方案；作为技术Owner，协调各模块提供技术方案，并促成产品交付；通过产品技术方案，减少单项乘客侧订单投诉率（CPO）
+  \item 通过分析进线的主要问题，协助产品经理推出产品方案，并完成技术方案的开发与落地，减少单项乘客侧订单投诉率（CPO）
 \end{itemize}
 
 
@@ -71,7 +72,7 @@
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术栈: C/C++, Python, Protobuf, Bazel, Kubernetes
+  \item 技术栈: C/C++, Python, Protobuf, Bazel, Kubernetes， MySql
   \item 证书: PMP
 \end{itemize}
 
